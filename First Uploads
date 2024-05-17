@@ -146,7 +146,7 @@ fill(89, 52, 20);
 ellipse(x, y+faceSize/8, faceSize*4/15, faceSize/5);
 
 
-Kahn Academy Challenge - Mouse Tracker
+ Challenge - Mouse Tracker
 
 
 fill(255, 0, 255);

@@ -1,0 +1,243 @@
+echo "# Beginner-Code-Repository-2024" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ADUDEE2024/Beginner-Code-Repository-2024.git
+git push -u origin main
+
+
+
+Kahn Academy Challenge - Bucktooth Bunny
+
+ellipse(150, 70, 60, 120);  // left ear
+ellipse(240, 70, 60, 120);  // right ear
+
+ellipse(200, 170, 150, 150);    // face
+
+var eyeSize=15;
+noStroke();
+
+fill(0, 0, 0);
+ellipse(170, 150, eyeSize, eyeSize);  // left eye
+ellipse(230, 150, eyeSize, eyeSize);  // right eye
+
+line(150, 200, 250, 200);   // mouth
+
+var toothSize=15;
+
+noFill();
+rect(185, 200, 15, toothSize); // left tooth
+rect(200, 200, 15, toothSize); // right tooth
+
+
+
+Kahn Academy Challenge - Exploding Sun
+
+noStroke();
+// the beautiful blue sky
+background(82, 222, 240);
+
+// the starting size for the sun
+var sunSize = 30; 
+draw= function() {
+
+//all lines of code inside here will be run repeatedly
+
+background(0, 94, 255);
+  // The sun, a little circle on the horizon
+fill(255, 204, 0);
+ellipse(200+1, 298+1, sunSize, sunSize);  
+ 
+ var sunSize;
+    // The sun, a little circle on the horizon
+fill(255, 204, 0);
+ellipse(200+1, 298+1, sunSize, sunSize);
+
+//the sun, rising
+fill(255, 204, 0);
+ellipse(200+1, 298+1, sunSize, sunSize);
+
+// The land, blocking half of the sun
+fill(76, 168, 67);
+rect(0, 300, 400, 100);
+
+    
+};
+ 
+
+Kahn Academy Challenge - Parting Clouds
+
+noStroke();
+var leftX = 134;
+var rightX = 299;
+var sunRadius = 100+2;
+
+draw = function() {
+    background(184, 236, 255);
+    
+    fill(255, 170, 0);
+    ellipse(200+2, 100, sunRadius+=2, sunRadius+2);
+    
+    // clouds 
+    fill(255, 255, 255);
+    // left cloud
+    ellipse(leftX-=1, 150, 126, 97);
+    ellipse(leftX+62, 150, 70, 60);
+    ellipse(leftX-62, 150, 70, 60);
+    
+    // right cloud
+    ellipse(rightX+=1, 100, 126, 97);
+    ellipse(rightX+62, 100, 70, 60);
+    ellipse(rightX-62, 100, 70, 60);
+  
+    
+};
+
+
+Kahn Academy Challenge - Sunny Snowy Day
+
+background(0, 77, 255);
+// The ground
+fill(60, 255, 0);
+rect(0, 300, 400, 100);  
+fill(251, 255, 0);
+// The sun
+ellipse(80, 64, 100, 100);  
+fill(226, 235, 234);
+// The snowman
+ellipse(200, 300, 150, 150);
+ellipse(200, 200, 100, 100);
+ellipse(200, 120, 75, 75);
+
+
+
+Kahn Academy Challenge - Brown Bear Eyes
+
+noStroke();
+var x = 150;
+var y = 251;
+var faceSize = 296;
+
+// ears
+var eyeSize=faceSize/8;
+var earSize=faceSize*1/2;
+fill(89, 52, 17);
+ellipse(x-faceSize*2/5, y-faceSize*2/5, earSize, earSize);
+ellipse(x+faceSize*2/5, y-faceSize*2/5, earSize, earSize);
+
+// face
+fill(163, 113, 5);
+ellipse(x, y, faceSize, faceSize);
+
+
+
+//eyes 
+
+
+fill(0, 0, 0);
+ellipse(x-faceSize/4, y-faceSize/8, eyeSize, eyeSize);
+ellipse(x+faceSize/4, y-faceSize/8, eyeSize, eyeSize);
+
+
+
+//nose
+fill(89, 52, 20);
+ellipse(x, y+faceSize/8, faceSize*4/15, faceSize/5);
+
+
+Kahn Academy Challenge - Mouse Tracker
+
+
+fill(255, 0, 255);
+
+draw = function() {
+    background(255, 255, 255);
+    ellipse(mouseX, mouseY, 12, 12); 
+
+var label=mouseX+", "+mouseY;
+
+text (label, mouseX, mouseY);
+
+
+};
+
+
+Kahn Academy Challenge - Moles In Holes
+
+var drawMole = function(moleX, moleY) {
+  
+  
+  
+  
+    fill(125, 93, 43);
+    ellipse(moleX, moleY, 60, 60); // face
+    fill(255, 237, 209);
+    ellipse(moleX, moleY+10, 33, 28); 
+    fill(0, 0, 0);
+    ellipse(moleX-10, moleY-15, 10, 10); // eyes
+    ellipse(moleX+10, moleY-15, 10, 10);
+    ellipse(moleX, moleY-5, 10, 10); // nose
+    ellipse(moleX, moleY+10, 20, 5); // mouth
+};
+
+
+
+
+background(52, 168, 83); // green grass
+
+
+
+
+fill(0, 0, 0);
+ellipse(200, 200, 100, 30); // holes!
+ellipse(70, 119, 100, 30);
+
+
+
+
+
+ellipse(300, 60, 100, 30);
+ellipse(297, 350, 100, 30);
+
+drawMole(304, 47);
+drawMole(299, 336 );
+drawMole(71, 102 );
+drawMole(203,185 );
+
+
+
+Kahn Academy Challenge - Calculator
+
+var add = function(num1, num2) {
+    return num1 + num2;
+};
+var subtract = function(num1, num2) {
+    return num1 - num2;
+};
+var multiply = function(num1, num2) {
+    return num1 * num2;
+};
+var divide = function(num1, num2) {
+    return num1 / num2;
+};
+
+fill(255, 0, 0);
+text("15 + 3 is " + add(15, 3), 10, 20);
+text("15 - 3 is " + subtract(15, 3), 10, 50);
+text("15 * 3 is " + multiply(15, 3), 10, 80);
+text("15 / 3 is " + divide(15, 3), 10, 110);
+
+text("8 + 4 is " + add(8, 4), 10, 170);
+text("8 - 4 is " + subtract(8, 4), 10, 200);
+text("8 * 4 is " + multiply(8, 4), 10, 230);
+text("8 / 4 is " + divide(8, 4), 10, 260);
+
+
+
+
+
+
+
+
+

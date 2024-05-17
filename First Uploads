@@ -8,7 +8,7 @@ git push -u origin main
 
 
 
-Kahn Academy Challenge - Bucktooth Bunny
+ Challenge - Bucktooth Bunny
 
 ellipse(150, 70, 60, 120);  // left ear
 ellipse(240, 70, 60, 120);  // right ear
@@ -32,7 +32,7 @@ rect(200, 200, 15, toothSize); // right tooth
 
 
 
-Kahn Academy Challenge - Exploding Sun
+ Challenge - Exploding Sun
 
 noStroke();
 // the beautiful blue sky
@@ -66,7 +66,7 @@ rect(0, 300, 400, 100);
 };
  
 
-Kahn Academy Challenge - Parting Clouds
+Challenge - Parting Clouds
 
 noStroke();
 var leftX = 134;
@@ -95,7 +95,7 @@ draw = function() {
 };
 
 
-Kahn Academy Challenge - Sunny Snowy Day
+ Challenge - Sunny Snowy Day
 
 background(0, 77, 255);
 // The ground
@@ -112,7 +112,7 @@ ellipse(200, 120, 75, 75);
 
 
 
-Kahn Academy Challenge - Brown Bear Eyes
+ Challenge - Brown Bear Eyes
 
 noStroke();
 var x = 150;
@@ -163,7 +163,7 @@ text (label, mouseX, mouseY);
 };
 
 
-Kahn Academy Challenge - Moles In Holes
+ Challenge - Moles In Holes
 
 var drawMole = function(moleX, moleY) {
   
@@ -207,7 +207,7 @@ drawMole(203,185 );
 
 
 
-Kahn Academy Challenge - Calculator
+ Challenge - Calculator
 
 var add = function(num1, num2) {
     return num1 + num2;
